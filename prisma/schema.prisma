@@ -113,6 +113,7 @@ model Purchase {
   id String @id @default(uuid())
   userId String
   courseID String
+  paymentId String?
   course Course @relation(fields: [courseID], references: [id], onDelete:Cascade)
 
   createdAt DateTime @default(now())

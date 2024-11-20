@@ -8,12 +8,12 @@ const guestRoutes = [
   {
     icon: Home,
     label: "Dashboard",
-    href: "/",
+    href: "/search",
   },
   {
     icon: Video,
     label: "Browse",
-    href: "/search",
+    href: "/",
   },
   {
     icon: MessageSquareIcon,
