@@ -56,6 +56,7 @@ export const getCourses = async ({
                     return {
                         ...course,
                         progress: null,
+                        category: course.category || { name: "", id: "" },
                     };
                 }
 
@@ -63,6 +64,7 @@ export const getCourses = async ({
                 return {
                     ...course,
                     progress: progressPercentage,
+                    category: course.category || { name: "", id: "" },
                 };
             })
         );
